@@ -52,5 +52,19 @@ angular.module('starter.controllers', [])
   ];
 })
 
+.controller('DecksCtrl', function($scope) {
+  $scope.decks = [
+    { title: 'Prenatal', id: 1},
+    { title: 'LaborAssessment', id: 2},
+    { title: 'Intrapartum', id: 3 },
+    { title: 'Postpartum', id: 4 }
+  ];
+})
+
+.controller('DeckCtrl', function($scope, $stateParams) {
+  
+})
+
+
 .controller('PlaylistCtrl', function($scope, $stateParams) {
 });
